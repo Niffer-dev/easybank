@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -15,13 +16,17 @@
         <a href="/" class="logo">  
             <img src="/images/elogo.svg" class="logo2" width="150px" />
         </a>
+        <div class="togglers">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-fill"></i>
+        </div>
          <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#careers">Contacts</a></li>
         </ul>
-        <div>
+        <div class="nav-btn">
             <button class="requestInviteBtn">Request invite</button>
         </div>
     </nav> 
@@ -42,25 +47,25 @@
         </div>
 
         <div class="about-body">
-            <div>
+            <div data-aos="fade-up">
                 <img src="/images/eicon1.svg" class="icon1">
                 <h3>Online Banking</h3>
                 <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
                 <img src="/images/eicon2.svg" class="icon2">
                 <h3>Simple budgeting</h3>
                 <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
             </div>
             
-            <div>
+            <div data-aos="fade-up">
                 <img src="/images/eicon3.svg" class="icon3">
                 <h3>Fast Onboarding</h3>
                 <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
                 <img src="/images/eicon4.svg" class="icon4">
                 <h3>Open AI</h3>
                 <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.<p>
@@ -171,6 +176,47 @@
             <p> &copy; Easybank. All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- <div class="modalBg">
+        <div class="modalContent">
+            <button>X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, obcaecati!</p>
+        </div>
+    </div>
+
+    <style>
+        .modalBg{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.432);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modalContent{
+            background-color: #fff;
+            width: 60%;
+            padding: 20px;
+            position: relative;
+        }
+
+        .modalContent button{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    </style> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/js/main.js"></script>
 
 </body>
 </html>

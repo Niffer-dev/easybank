@@ -37,10 +37,6 @@ nav{
     gap: 10px;
 }
 
-.logo2{
-    /* margin-left: 40%; */
-}
-
 nav ul{
     display: flex;
     gap: 45px;
@@ -54,6 +50,10 @@ nav ul :hover{
 
 nav a{
     color: grey;
+}
+
+.togglers{
+    display: none;
 }
 
 .requestInviteBtn{
@@ -157,6 +157,7 @@ main .mainbtn1{
     gap: 50px;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
+    align-items: center;
     padding: 22px 0;
 }
 
@@ -241,7 +242,7 @@ footer img{
 
 @media screen and (max-width:992px) {
     nav{
-        padding: 10px 20px;
+        padding: 20px;
     }
 
     nav ul{
@@ -304,5 +305,255 @@ footer img{
     }
 }
 
+@media screen and (max-width:768px) {
+    main{
+        padding: 30px;
+    }
+
+    main h1{
+        font-size: 28px;
+    }
+
+    main p{
+        font-size: 14px;
+    }
+
+    main img{
+        padding: 20px 0;
+    }
+
+    #about{
+        padding: 100px 10px;
+    }
+
+    .about-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .about-header h1{
+        font-size: 22px;
+    }
+
+    .about-body h3{
+        font-size: 13px;
+    }
+
+    .about-header p, .about-body P{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    #blogs{
+        padding: 100px 30px;
+    }
+
+    .blog-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .blog-body h4{
+        font-size: 12px;
+    }
+
+    .blog-body .blogContent a{
+        font-size: 12px;
+    }
+
+    .blog-body p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #careers{
+        font-size: 10px;
+        padding: 20px 10px;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav ul{
+        position: fixed;
+        background-color: #fff;
+        flex-direction: column;
+        top: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 40%;
+        padding: 2rem;
+        border-radius: 6px;
+        border: 1px solid rgba(59, 59, 59, 0.774);
+        transition: 1s;
+    }
+
+    .togglers{
+        display: block;
+        font-size: 20px;
+    }
+
+    .ri-close-fill{
+        display: none;
+    }
+
+    main{
+        padding: 28px 8px;
+    }
+
+    main h1{
+        font-size: 18px;
+    }
+
+    main p{
+        font-size: 12px;
+    }
+
+    main img{
+        padding: 13px 0;
+    }
+
+    #about{
+        padding: 100px 8px;
+    }
+
+    .about-header h1{
+        font-size: 18px;
+    }
+
+    .about-body h3{
+        font-size: 13px;
+    }
+
+    .about-header p, .about-body P{
+        font-size: 13px;
+    }
+
+    #blogs{
+        padding: 90px 10px;
+    }
+
+    .blog-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0px;
+        gap: 45px;
+    }
+    
+    .blog-body h4{
+        font-size: 12px;
+    }
+
+    .blog-body .blogContent a{
+        font-size: 10px;
+    }
+
+    .blog-body p{
+        font-size: 11px;
+    }
+
+    #careers{
+        font-size: 10px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width:480px){
+    nav ul{
+        width: 60%;
+    }
+    #careers{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 30px 15px;
+    }
+
+    .footer-icons{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .footer-btn button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 4px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    nav ul{
+        width: 80%;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    main img{
+        order: -1;
+        padding: 5px 0;
+    }
+
+    main h1{
+        font-size: 30px;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    main div{
+        width: 80%;
+    }
+
+    #about{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .about-body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-header{
+        width: 90%;
+        padding: 15px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #blogs{
+        padding: 50px 10px;
+    }
+
+    .blog-body{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 25px 22px;
+        gap: 30px;
+    }
+
+    .blog-header h3{
+        margin-left: 20px;
+    }
+
+
+    
+
+
+}
 
 
